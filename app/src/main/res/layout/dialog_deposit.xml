@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/button_text_color_active"
+    android:orientation="vertical"
+    android:theme="@style/AppCompatAlertDialogStyle">
+
+    <ImageView
+        android:id="@+id/deposit_logo"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FFFFBB33"
+        android:contentDescription="@string/app_name"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ref_logo"/>
+
+    <TextView
+        android:id="@+id/to_keep_playing_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:text="@string/deposit_credits_dialog_text_1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:autoLink="web"
+        android:gravity="start"
+        android:linksClickable="true"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:text="@string/deposit_credits_dialog_text_2"/>
+</LinearLayout>

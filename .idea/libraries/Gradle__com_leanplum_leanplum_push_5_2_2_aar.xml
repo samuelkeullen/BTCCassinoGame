@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.leanplum:leanplum-push:5.2.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8f63b1481693a2b17f03fd59e0289fec/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8f63b1481693a2b17f03fd59e0289fec/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8f63b1481693a2b17f03fd59e0289fec/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

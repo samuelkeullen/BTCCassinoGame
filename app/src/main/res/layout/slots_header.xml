@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contents"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    tools:showIn="@layout/activity_slots">
+
+    <View
+        android:id="@+id/border"
+        android:background="@color/vp_payout_border"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/crap_text"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:textColor="@color/vp_payout_text"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentStart="true"
+        android:text="@string/slots_bonus_3_or_more"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:padding="4dp"
+        android:id="@+id/scatter_img"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:scaleType="fitStart"
+        android:layout_toEndOf="@id/crap_text"
+        android:src="@drawable/bch_logo"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/crap_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/blue_green"
+        android:text="@string/slots_bonus_free_spins"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical"
+        android:layout_toStartOf="@id/border"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/crap_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/vp_payout_text"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="start"
+        android:gravity="center_vertical"
+        android:text="@string/slots_bonus_five_in_a_row_1"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/border"/>
+
+    <ImageView
+        android:id="@+id/wild_img"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/s_symbols0_1"
+        android:layout_toEndOf="@id/crap_text3"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/vp_payout_text"
+        android:text="@string/slots_bonus_five_in_a_row_2"
+        android:id="@+id/crap_text4"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@id/wild_img"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:textColor="@color/blue_green"
+        android:text="10000"
+        android:id="@+id/jackpot"
+        android:gravity="end|center"
+        android:layout_marginEnd="6dp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        tools:ignore="HardcodedText"/>
+
+</RelativeLayout>

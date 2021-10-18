@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Bitcoin Games Settings">
+    <PreferenceCategory android:title="Gameplay">
+
+        <CheckBoxPreference
+            android:key="sound_enable"
+            android:title="Enable sound"
+            android:summary="Sound is on"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Your account">
+
+        <EditTextPreference
+            android:name="Your account key"
+            android:layout_width="wrap_content"
+            android:key="account_key"
+            android:summary="ABCD1234"
+            android:title="Edit your account key" />
+
+        <Preference
+            android:key="import_account"
+            android:title="Import account key from QR code" />
+
+        <Preference
+            android:key="new_account"
+            android:title="Create new account key" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Other">
+
+        <Preference android:title="Visit games.bitcoin.com">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://games.bitcoin.com" />
+        </Preference>
+
+        <Preference
+            android:title="View source code"
+            android:key="view_source_code"
+            android:summary="https://github.com/Bitcoin-com/GamesAndroidApp" />
+
+        <Preference
+            android:title="Email us"
+            android:key="email_us"
+            android:summary="games@bitcoin.com" />
+
+        <Preference
+            android:title="Version"
+            android:key="version"
+            android:summary="..." />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

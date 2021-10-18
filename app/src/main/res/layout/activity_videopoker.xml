@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@drawable/bg2"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:layout_height="fill_parent"
+    tools:context=".app.VideoPokerActivity">
+
+    <LinearLayout
+        android:id="@+id/contents"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <FrameLayout
+            android:id="@+id/payout_holder"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="fill_parent"
+            android:layout_weight="270"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="350"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/card_holder0"
+                layout="@layout/vp_card_holder"
+                android:tag="0" />
+
+            <include
+                android:id="@+id/card_holder1"
+                layout="@layout/vp_card_holder"
+                android:tag="1" />
+
+            <include
+                android:id="@+id/card_holder2"
+                layout="@layout/vp_card_holder"
+                android:tag="2" />
+
+            <include
+                android:id="@+id/card_holder3"
+                layout="@layout/vp_card_holder"
+                android:tag="3" />
+
+            <include
+                android:id="@+id/card_holder4"
+                layout="@layout/vp_card_holder"
+                android:tag="4" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/win_bet_credits"
+            layout="@layout/win_bet_credits" />
+
+        <RelativeLayout style="@style/button_bar">
+
+            <Button
+                style="@style/button"
+                android:id="@+id/auto_button"
+                android:onClick="onAuto"
+                android:background="@drawable/button_blue_green"
+                android:layout_alignParentStart="true"
+                android:text="@string/auto" />
+
+            <Button
+                style="@style/button"
+                android:id="@+id/paytables_button"
+                android:onClick="onPaytables"
+                android:layout_width="105dp"
+                android:background="@drawable/button_cyan"
+                android:layout_toEndOf="@id/auto_button"
+                android:text="@string/vp_button_more_games" />
+
+            <Button
+                style="@style/button"
+                android:id="@+id/deposit_ingame_button"
+                android:layout_toEndOf="@id/paytables_button"
+                android:background="@drawable/button_red"
+                android:text="@string/deposit"
+                android:textAllCaps="true"
+                android:onClick="onDeposit"
+                />
+
+            <Button
+                style="@style/button"
+                android:id="@+id/satoshi_button"
+                android:layout_width="100dp"
+                android:onClick="onCreditSatoshi"
+                android:background="@drawable/button_dark"
+                android:layout_centerInParent="true"
+                android:textSize="12sp" />
+
+            <Button
+                style="@style/button"
+                android:id="@+id/deal_button"
+                android:onClick="onDeal"
+                android:background="@drawable/button_yellow_bright"
+                android:layout_alignParentEnd="true"
+                android:text="@string/button_draw" />
+
+            <Button
+                style="@style/button"
+                android:id="@+id/double_button"
+                android:onClick="onDouble"
+                android:layout_width="105dp"
+                android:background="@drawable/button_dark"
+                android:layout_toStartOf="@id/deal_button"
+                android:text="@string/text_double" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

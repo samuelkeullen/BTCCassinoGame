@@ -1,0 +1,246 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg2"
+    android:splitMotionEvents="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".app.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:splitMotionEvents="false"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:gravity="clip_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/b" />
+                <TextView
+                    android:layout_marginEnd="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bitcoin_com_logo"
+                    android:text="@string/bitcoin_com"/>
+                <TextView
+                    android:id="@+id/bitcoin_com_logo_text"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue_green"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/select_coin"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/radioCurrency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical">
+                    <RadioButton
+                        android:id="@+id/radioBch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="@string/bch" />
+                    <RadioButton
+                        android:id="@+id/radioBtc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/btc" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:splitMotionEvents="false"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:splitMotionEvents="false"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/videopoker_button"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:onClick="onVideoPoker"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="false"
+                    android:gravity="clip_horizontal"
+                    android:background="@null"
+                    android:src="@drawable/videopoker_button" />
+
+                <ImageButton
+                    android:id="@+id/blackjack_button"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:onClick="onBlackjack"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="false"
+                    android:gravity="clip_horizontal"
+                    android:background="@null"
+                    android:src="@drawable/blackjack_button" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:splitMotionEvents="false"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/slots_button"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:onClick="onSlots"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="false"
+                    android:gravity="clip_horizontal"
+                    android:background="@null"
+                    android:src="@drawable/slots_button" />
+
+                <ImageButton
+                    android:id="@+id/dice_button"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:onClick="onDice"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="false"
+                    android:gravity="clip_horizontal"
+                    android:background="@null"
+                    android:src="@drawable/dice_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="@string/main_connecting"
+            android:textIsSelectable="false" />
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="bottom"
+            android:splitMotionEvents="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/deposit_button"
+                android:layout_height="wrap_content"
+                android:text="@string/deposit"
+                android:onClick="onDeposit"
+                android:textSize="22sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp" />
+
+            <Button
+                android:id="@+id/cashout_button"
+                android:layout_height="wrap_content"
+                android:text="@string/cash_out"
+                android:onClick="onCashOut"
+                android:textSize="22sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp" />
+
+            <Button
+                android:id="@+id/settings_button"
+                android:layout_height="wrap_content"
+                android:text="@string/main_button_settings"
+                android:onClick="onSettings"
+                android:textSize="22sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp" />
+
+            <Button
+                android:id="@+id/share_button"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:onClick="onShare"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="22sp"
+                android:text="@string/main_button_share"
+                android:drawableEnd="@drawable/social_share" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/test_local_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="55dp"
+        android:text="@string/main_local_test_build"
+        android:textColor="#ef5350"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+</FrameLayout>

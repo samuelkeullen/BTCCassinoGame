@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@drawable/bg2"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:layout_height="fill_parent"
+    tools:context=".app.BlackjackActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/contents"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/dealer_hands_holder"
+            android:layout_width="fill_parent"
+            android:layout_weight="290"
+            android:layout_height="0dp" />
+
+        <FrameLayout
+            android:id="@+id/player_zone"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="290"
+            android:layout_height="0dp"
+            android:layout_marginEnd="30dp">
+
+            <FrameLayout
+                android:id="@+id/player_hands_holder"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <Button
+                android:id="@+id/insurance_button"
+                android:layout_height="35dp"
+                android:layout_width="110dp"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:onClick="onInsurance"
+                android:scaleType="center"
+                android:adjustViewBounds="false"
+                android:visibility="visible"
+                android:background="@drawable/button_blue_green"
+                android:textColor="#FFF5F5F5"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:text="@string/bj_button_insurance" />
+
+        </FrameLayout>
+
+        <include
+            android:id="@+id/win_bet_credits"
+            layout="@layout/win_bet_credits" />
+
+        <LinearLayout style="@style/button_bar">
+
+            <Button
+                style="@style/button_bj"
+                android:id="@+id/auto_button"
+                android:onClick="onAuto"
+                android:background="@drawable/button_blue_green"
+                android:text="@string/auto" />
+
+            <Button
+                style="@style/button_bj"
+                android:id="@+id/deposit_ingame_button"
+                android:background="@drawable/button_red"
+                android:text="@string/deposit"
+                android:textAllCaps="true"
+                android:onClick="onDeposit" />
+
+            <Button
+                style="@style/button_bj"
+                android:id="@+id/double_button"
+                android:onClick="onDouble"
+                android:text="@string/text_double" />
+
+            <Button
+                style="@style/button_bj"
+                android:id="@+id/split_button"
+                android:onClick="onSplit"
+                android:text="@string/bj_button_split" />
+
+            <Button
+                style="@style/button"
+                android:id="@+id/satoshi_button"
+                android:layout_width="100dp"
+                android:onClick="onCreditSatoshi"
+                android:background="@drawable/button_dark"
+                android:textSize="12sp" />
+
+            <Button
+                style="@style/button_bj"
+                android:id="@+id/hit_button"
+                android:onClick="onHit"
+                android:text="@string/bj_button_hit" />
+
+            <Button
+                style="@style/button_bj"
+                android:id="@+id/stand_button"
+                android:onClick="onStand"
+                android:text="@string/bj_button_stand" />
+
+            <Button
+                style="@style/button_bj"
+                android:id="@+id/deal_button"
+                android:onClick="onDeal"
+                android:background="@drawable/button_green_bright"
+                android:text="@string/button_draw" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

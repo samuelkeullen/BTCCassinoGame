@@ -1,0 +1,143 @@
+<resources>
+
+    <string name="app_name">BTC Cassino Games</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Configurações</string>
+    <string name="title_activity_main">BTC Cassino Games</string>
+    <string name="credits">CRÉDITOS</string>
+    <string name="test_credits">CRÉDITOS DE TESTE</string>
+    <string name="free_spins">ROLETADAS GRÁTIS</string>
+    <string name="bet_amount">APOSTAR %d</string>
+    <string name="auto">AUTO</string>
+    <string name="help">AJUDA</string>
+    <string name="bet_max">APOSTA MÁXIMA</string>
+    <string name="slots_spin">ROLETAR</string>
+    <string name="cashout_amount_satoshi">Sacar (%s)</string>
+    <string name="cashout_full_amount">Sacar Tudo</string>
+    <string name="cashout_destination_address">Endereço do destino</string>
+    <string name="cashout_scan_qr_code">Escanear QR Code</string>
+    <string name="cashout_submit">Sacar</string>
+    <string name="cashout_transaction_fee_info">Uma pequena taxa de aproximada 0.0001 %s vai ser deduzida</string>
+    <string name="deposit_address">Seu endereço de depósito:</string>
+    <string name="deposit_clipboard_hint">(Toque para copiar)</string>
+    <string name="deposit_external_app">Toque aqui para usar aplicativos externos para depositar Bitcoins</string>
+    <string name="deposit_app_recommendation">Nós recomendamos o App Android BlockChain Android para mandar e receber Bitcoins.</string>
+    <string name="dice_jackpot5_text">ROLAR CINCO 7\'S</string>
+    <string name="dice_jackpot6_text">ROLAR SEIS 7\'S</string>
+    <string name="dice_label_payout">PAGAMENTO</string>
+    <string name="dice_label_descriptor_payout">(multiplicador)</string>
+    <string name="dice_label_win_chance">CHANCE DE GANHAR</string>
+    <string name="dice_label_descriptor_win_chance">(%)</string>
+    <string name="dice_label_bet_amount">APOSTAR </string>
+    <string name="dice_label_descriptor_bet_amount">(créditos)</string>
+    <string name="dice_label_profit">LUCRO</string>
+    <string name="dice_label_descriptor_profit">(créditos)</string>
+    <string name="dice_chance_max_97_percentage">A chance não pode ser maior que 97%</string>
+    <string name="dice_roll_high_button"><![CDATA[ROLL HIGH %s]]></string>
+    <string name="dice_roll_low_button"><![CDATA[ROLL LOW %s]]></string>
+    <string name="main_connecting">Conectando…</string>
+    <string name="loading">Carregando…</string>
+    <string name="deposit">Depositar</string>
+    <string name="cash_out">Sacar</string>
+    <string name="main_button_settings">Configurações</string>
+    <string name="main_button_share">Compartilhar</string>
+    <string name="main_local_test_build">BUILD DE TESTE</string>
+    <string name="slots_bonus_3_or_more">3 OU MAIS</string>
+    <string name="slots_bonus_free_spins">10 ROLETADAS GRÁTIS</string>
+    <string name="slots_bonus_five_in_a_row_1">CINCO</string>
+    <string name="slots_bonus_five_in_a_row_2">EM UMA SEQUÊNCIA</string>
+    <string name="slots_info_bar_play_20_lines">CONSIGA 20 LINHAS PARA MAIS GANHOS</string>
+
+    <string name="slots_info_bar_win_configuration_1">GANHE 1 LINHA</string>
+    <string name="slots_info_bar_win_configuration_2">GANHE %d LINHAS</string>
+    <string name="slots_info_bar_win_configuration_3">GANHE %d BÔNUS DE DISPERSÃO</string>
+    <string name="slots_info_bar_win_configuration_4">GANHE 1 LINHA E %d BÔNUS DE DISPERSÃO</string>
+    <string name="slots_info_bar_win_configuration_5">GANHE %1$d LINHAS E %2$d BÔNUS DE DISPERSÃO</string>
+    <string name="bj_button_insurance">SEGURO</string>
+    <string name="bj_button_insurance_won">SEGURO DE GANHAR</string>
+    <string name="bj_button_insurance_lost">PERDA DE SEGURO</string>
+    <string name="text_double">DOBRO</string>
+    <string name="bj_button_split">DIVIDIR</string>
+    <string name="bj_button_hit">BATER</string>
+    <string name="bj_button_stand">ESPERAR</string>
+    <string name="button_draw">SACAR</string>
+    <string name="bj_label_bet">APOSTAR</string>
+    <string name="slots_number_of_lines">LINHAS %d</string>
+    <string name="slots_how_to_play_instructions">(Passe para direita/esquerda para mudar a página de ajuda)</string>
+    <string name="vp_button_more_games">MAIS JOGOS</string>
+    <string name="button_credit_value">%1$s %2$s \nVALOR DE CRÉDITOS</string>
+    <string name="auto_menu_speed">Velocidade</string>
+    <string name="auto_menu_strategy">Estratégia</string>
+    <string name="bj_auto_menu_insurance">Fazer seguro</string>
+    <string name="play">Jogar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="dice_auto_menu_target">Alvo</string>
+    <string name="bitcoin_balance">Saldo: %1$s %2$s</string>
+    <string name="QR_code_error">Erro ao escanear QR code</string>
+    <string name="cashout_dialog_withdrawing_bitcoins">Sacando Bitcoins…</string>
+    <string name="cashout_dialog_success">%1$s %2$s foi mandado para:\n%3$s</string>
+    <string name="success">Sucesso</string>
+    <string name="cashout_failure_reason_pending_txs">Motivo: Um ou mais de seus depósitos anteriores ainda não foram confirmados. As confirmações de depósito geralmente levam de 10 a 20 minutos. Por favor, tente novamente mais tarde.</string>
+    <string name="cashout_failure_reason_bad_address">Motivo: Endereço de destino inválido. Verifique o endereço do Bitcoin e tente novamente.</string>
+    <string name="cashout_failure_reason_balance">Motivo: Valor de saque inválido. Verifique o valor e tente novamente.</string>
+    <string name="cashout_failure_reason_server_msg">Motivo: %s</string>
+    <string name="cashout_dialog_failure_title">Incapaz de sacar</string>
+    <string name="ok">OK</string>
+    <string name="select_coin">Selecionar moeda:</string>
+    <string name="btc">BTC</string>
+    <string name="bch">BCH</string>
+    <string name="deposit_missing_wallet_message">Nenhum aplicativo Bitcoin foi encontrado no seu dispositivo. Gostaria de baixar a carteira Bitcoin Blockchain do Google Play?</string>
+    <string name="deposit_missing_wallet_app_url">https://play.google.com/store/apps/details?id=piuk.blockchain.android</string>
+    <string name="deposit_message_retrieving_dep_address">Recebendo endereço de depósito…</string>
+    <string name="warning_waiting_for_confirmations">(Alguns depósitos estão aguardando confirmações)</string>
+    <string name="vp_auto_menu_play_mode">Modo de jogo</string>
+    <string name="vp_auto_menu_double_down">Double Down</string>
+    <string name="vp_hold">SEGURAR</string>
+    <string name="vp_dealer">DEALER</string>
+    <string name="bj_ace_or">OU</string>
+    <string name="text_win">GANHOU</string>
+    <string name="not_enough_credits">Créditos insuficientes</string>
+    <string name="deposit_credits_dialog_text_1">Para continuar jogando bitcoins de depósito.</string>
+    <string name="deposit_credits_dialog_text_2">Para comprar bitcoin, visite buy.bitcoin.com.</string>
+    <string name="create_account">Criar Conta</string>
+    <string name="bitcoin_account">Conta E Bitcoin (%s)</string>
+    <string name="add_existing_account_key_default">Adicione sua chave de conta existente</string>
+    <string name="add_existing_account_key">Adicione a sua existente (%s) Chave da conta</string>
+    <string name="open_account_default">Abrir Conta</string>
+    <string name="open_account">Abrir %s Conta</string>
+    <string name="do_not_have_an_account_default">Eu ainda não tenho uma conta, por favor gere uma para mim</string>
+    <string name="do_not_have_an_account">Eu ainda não tenho uma %s conta ainda, por favor gere.uma para mim</string>
+    <string name="create">Criar</string>
+    <string name="bitcoin_com">SKL INFOTECH </string>
+    <string name="cashgames">Cassino Games</string>
+    <string name="games">Games</string>
+
+    <string-array name="auto_strategy_array">
+        <item>Repetir mesma Aposta</item>
+        <item>Martingale</item>
+    </string-array>
+    <string-array name="auto_speed_array">
+        <item>Lento</item>
+        <item>Médio</item>
+        <item>Rápido</item>
+    </string-array>
+    <string-array name="auto_target_array">
+        <item>Alto</item>
+        <item>Baixo</item>
+    </string-array>
+    <string-array name="vp_mode_array">
+        <item>Padrão</item>
+        <item>Segure apenas</item>
+    </string-array>
+    <string-array name="vp_double_array">
+        <item>Nunca</item>
+        <item>As vezes (50%)</item>
+        <item>Sempre</item>
+    </string-array>
+
+    <string-array name="bj_insurance_array">
+        <item>Nunca</item>
+        <item>As vezes</item>
+        <item>Sempre</item>
+    </string-array>
+</resources>

@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:windowNoTitle="true"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    tools:context=".app.SlotsActivity"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:id="@+id/contents"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="X X X ... 10 Spins"
+            android:id="@+id/crap_text_outer"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="W W W W W ... 4572.48"
+            android:id="@+id/crap_text"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/dots_bg"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+            android:layout_weight="500"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:src="@drawable/dots_game" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="WIN 25"
+            android:id="@+id/dots_win1"
+            android:textSize="35sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:text="LINE PAYS 10"
+            android:id="@+id/dots_win2"
+            android:textSize="25sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="#008800"
+            android:text="150 CREDITS"
+            android:id="@+id/dots_credits"
+            android:textSize="35sp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/dots_pull"
+            android:text="PLAY"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:onClick="onPull"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#e0e0e0" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,293 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context=".app.DiceActivity">
+
+    <RelativeLayout
+        android:id="@+id/contents"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/border"
+            android:background="@color/vp_payout_border"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/jackpot5_roll_five"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textColor="@color/vp_payout_text"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentStart="true"
+            android:text="@string/dice_jackpot5_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jackpot5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/blue_green"
+            android:text="0"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:layout_toStartOf="@id/border"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/jackpot_roll_six"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/vp_payout_text"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="start"
+            android:gravity="center_vertical"
+            android:text="@string/dice_jackpot6_text"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/border" />
+
+        <TextView
+            android:id="@+id/jackpot6"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textColor="@color/blue_green"
+            android:text="0"
+            android:gravity="end|center"
+            android:layout_marginEnd="6dp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/d_input_row">
+
+        <LinearLayout style="@style/d_input_label_container">
+
+            <TextView
+                style="@style/d_input_label"
+                android:labelFor="@+id/payout_valuetext"
+                android:text="@string/dice_label_payout" />
+
+            <TextView
+                style="@style/d_input_label_units"
+                android:text="@string/dice_label_descriptor_payout" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/d_input_value"
+            android:text="2"
+            android:id="@id/payout_valuetext"
+            tools:ignore="HardcodedText" />
+
+        <SeekBar
+            style="@style/d_input_seekbar"
+            android:id="@+id/payout_seekbar" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/d_input_row">
+
+        <LinearLayout style="@style/d_input_label_container">
+
+            <TextView
+                style="@style/d_input_label"
+                android:labelFor="@+id/chance_valuetext"
+                android:text="@string/dice_label_win_chance" />
+
+            <TextView
+                style="@style/d_input_label_units"
+                android:text="@string/dice_label_descriptor_win_chance" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/d_input_value"
+            android:text="49.5000"
+            android:id="@id/chance_valuetext"
+            tools:ignore="HardcodedText" />
+
+        <SeekBar
+            style="@style/d_input_seekbar"
+            android:id="@+id/chance_seekbar" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/d_input_row">
+
+        <LinearLayout style="@style/d_input_label_container">
+
+            <TextView
+                style="@style/d_input_label"
+                android:labelFor="@+id/amount_valuetext"
+                android:text="@string/dice_label_bet_amount" />
+
+            <TextView
+                style="@style/d_input_label_units"
+                android:text="@string/dice_label_descriptor_bet_amount" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/d_input_value"
+            android:id="@id/amount_valuetext" />
+
+        <SeekBar
+            style="@style/d_input_seekbar"
+            android:id="@+id/amount_seekbar" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/d_input_row">
+
+        <LinearLayout style="@style/d_input_label_container">
+
+            <TextView
+                style="@style/d_input_label"
+                android:labelFor="@+id/profit_valuetext"
+                android:text="@string/dice_label_profit" />
+
+            <TextView
+                style="@style/d_input_label_units"
+                android:text="@string/dice_label_descriptor_profit" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/d_input_value"
+            android:id="@id/profit_valuetext" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/result_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="HardcodedText">
+
+                <LinearLayout
+                    android:id="@+id/lucky_number_actual"
+                    style="@style/d_result_box"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/d_lucky_number_digit"
+                        android:text="0"
+                        android:id="@+id/lucky_number_actual0" />
+
+                    <TextView
+                        style="@style/d_lucky_number_digit"
+                        android:text="0"
+                        android:id="@+id/lucky_number_actual1" />
+
+                    <TextView
+                        style="@style/d_lucky_number_digit"
+                        android:text="."
+                        android:id="@+id/lucky_number_actual2" />
+
+                    <TextView
+                        style="@style/d_lucky_number_digit"
+                        android:text="0"
+                        android:id="@+id/lucky_number_actual3" />
+
+                    <TextView
+                        style="@style/d_lucky_number_digit"
+                        android:text="0"
+                        android:id="@+id/lucky_number_actual4" />
+
+                    <TextView
+                        style="@style/d_lucky_number_digit"
+                        android:text="0"
+                        android:id="@+id/lucky_number_actual5" />
+
+                    <TextView
+                        style="@style/d_lucky_number_digit"
+                        android:text="0"
+                        android:id="@+id/lucky_number_actual6" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/d_result_box"
+                    android:text="&lt;"
+                    android:id="@+id/lucky_number_direction" />
+
+                <TextView
+                    style="@style/d_result_box"
+                    android:text="49.5000"
+                    android:id="@+id/lucky_number_goal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/error_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/d_error_text"
+                    android:text="@string/dice_chance_max_97_percentage"
+                    android:id="@+id/error_text" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/win_bet_credits"
+        layout="@layout/win_bet_credits" />
+
+    <RelativeLayout style="@style/button_bar">
+        <Button
+            style="@style/button"
+            android:id="@+id/auto_button"
+            android:onClick="onAuto"
+            android:background="@drawable/button_blue_green"
+            android:text="@string/auto"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="@style/button"
+            android:id="@+id/deposit_ingame_button"
+            android:layout_toEndOf="@id/auto_button"
+            android:background="@drawable/button_red"
+            android:text="@string/deposit"
+            android:textAllCaps="true"
+            android:onClick="onDeposit"
+            />
+
+        <Button
+            style="@style/button"
+            android:id="@+id/roll_high"
+            android:onClick="onRollHigh"
+            android:background="@drawable/button_purple"
+            android:layout_width="150dp"
+            android:layout_alignParentEnd="true"
+            android:text="@string/dice_roll_high_button" />
+
+        <Button
+            style="@style/button"
+            android:id="@+id/roll_low"
+            android:onClick="onRollLow"
+            android:background="@drawable/button_purple"
+            android:layout_width="150dp"
+            android:layout_toStartOf="@id/roll_high"
+            android:text="@string/dice_roll_low_button" />
+
+    </RelativeLayout>
+
+</LinearLayout>

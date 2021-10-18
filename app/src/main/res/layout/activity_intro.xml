@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@drawable/bg2"
+    android:visibility="visible"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".app.IntroActivity">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a" />
+        <TextView
+            android:layout_marginEnd="5dp"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bitcoin_com_logo"
+            android:text="@string/bitcoin_com"/>
+        <TextView
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_green"
+            android:text="@string/games"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vp_payout_border">#e0e0e0</color>
+    <color name="vp_payout_bg">#ffffff</color>
+    <color name="vp_payout_text">#616161</color>
+    <color name="d_bg">#4c1161</color>
+    <color name="edittext_disabled">#d0d0d0</color>
+    <color name="light_gray_header_color">#646663</color>
+    <color name="hold_color">#fcdd7a</color>
+    <color name="gold">#dfd818</color>
+    <color name="blue_green">#13d19c</color>
+    <color name="s_bg">#f5f5f5</color>
+    <color name="credits">#b79523</color>
+    <color name="button_text_color_active">#ffffff</color>
+    <color name="button_text_color_inactive">#ddd</color>
+    <color name="bitcoin_games_videopoker">#fccc24</color>
+    <color name="bitcoin_games_blackjack">#7cb342</color>
+    <color name="bitcoin_games_slots">#0278be</color>
+    <color name="bitcoin_games_dice">#8e24aa</color>
+    <color name="bitcoin_com_logo">#ffffff</color>
+</resources>

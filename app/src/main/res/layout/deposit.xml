@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       tools:showIn="@layout/activity_deposit">
+
+    <include layout="@layout/standard_title"/>
+
+    <TextView
+        android:id="@+id/text_deposit_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="@string/deposit_address"/>
+
+    <TextView
+        android:id="@+id/deposit_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:onClick="onDepositAddress"
+        android:clickable="true"
+        android:text="@string/main_connecting"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/copy_clipboard_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="5dp"
+        android:textSize="18sp"
+        android:textColor="#bbbbbb"
+        android:gravity="center"
+        android:onClick="onDepositAddress"
+        android:clickable="true"
+        android:text="@string/deposit_clipboard_hint"/>
+
+    <Button
+        android:id="@+id/external_app_button"
+        android:layout_height="wrap_content"
+        android:text="@string/deposit_external_app"
+        android:onClick="onExternalApp"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="fill_parent"/>
+
+    <TextView
+        android:id="@+id/external_app_suggestion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="@string/deposit_app_recommendation"/>
+
+    <TextView
+        android:id="@+id/buy_bitcoins_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:autoLink="web"
+        android:text="@string/deposit_credits_dialog_text_2"/>
+</merge>

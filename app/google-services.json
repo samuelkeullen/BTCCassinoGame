@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "925237269013",
+    "firebase_url": "https://bitcoin-com-games.firebaseio.com",
+    "project_id": "bitcoin-com-games",
+    "storage_bucket": "bitcoin-com-games.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925237269013:android:e767a02ecb01e630",
+        "android_client_info": {
+          "package_name": "com.bitcoin.games"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925237269013-0t029q3k8dbrk6siflv1r1ov5i4ns6h4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bitcoin.games",
+            "certificate_hash": "1bab61706d38ac0c940721936f0dd7dd57ac9f2d"
+          }
+        },
+        {
+          "client_id": "925237269013-i5qhl3e21ib74s81ganse66doagcb0rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8-sr34n2FyrktX7xN0P8oV3WmtTe9XWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925237269013-i5qhl3e21ib74s81ganse66doagcb0rg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
