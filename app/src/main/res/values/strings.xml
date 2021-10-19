@@ -10,7 +10,7 @@
     <string name="bet_amount">APOSTAR %d</string>
     <string name="auto">AUTO</string>
     <string name="help">AJUDA</string>
-    <string name="bet_max">APOSTA MÁXIMA</string>
+    <string name="bet_max">APOSTAR TUDO</string>
     <string name="slots_spin">ROLETAR</string>
     <string name="cashout_amount_satoshi">Sacar (%s)</string>
     <string name="cashout_full_amount">Sacar Tudo</string>
@@ -39,8 +39,8 @@
     <string name="loading">Carregando…</string>
     <string name="deposit">Depositar</string>
     <string name="cash_out">Sacar</string>
-    <string name="main_button_settings">Configurações</string>
-    <string name="main_button_share">Compartilhar</string>
+    <string name="main_button_settings">Config</string>
+    <string name="main_button_share">Compart</string>
     <string name="main_local_test_build">BUILD DE TESTE</string>
     <string name="slots_bonus_3_or_more">3 OU MAIS</string>
     <string name="slots_bonus_free_spins">10 ROLETADAS GRÁTIS</string>
@@ -65,7 +65,7 @@
     <string name="slots_number_of_lines">LINHAS %d</string>
     <string name="slots_how_to_play_instructions">(Passe para direita/esquerda para mudar a página de ajuda)</string>
     <string name="vp_button_more_games">MAIS JOGOS</string>
-    <string name="button_credit_value">%1$s %2$s \nVALOR DE CRÉDITOS</string>
+    <string name="button_credit_value">%1$s %2$s </string>
     <string name="auto_menu_speed">Velocidade</string>
     <string name="auto_menu_strategy">Estratégia</string>
     <string name="bj_auto_menu_insurance">Fazer seguro</string>

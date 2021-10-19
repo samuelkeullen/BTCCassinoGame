@@ -32,15 +32,15 @@ public class SettingsActivity extends PreferenceActivity implements OnSharedPref
     final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
 
     if (CurrencySettings.getInstance(this).getAccountKey() == null) {
-      findPreference("account_key").setSummary("ERROR: Account key is NULL");
+      findPreference("account_key").setSummary("ERRO: Chave da conta está NULL");
     } else {
       findPreference("account_key").setSummary(CurrencySettings.getInstance(this).getAccountKey());
     }
 
     if (sharedPref.getBoolean("sound_enable", true)) {
-      findPreference("sound_enable").setSummary("Sound is on");
+      findPreference("sound_enable").setSummary("O som está ligado");
     } else {
-      findPreference("sound_enable").setSummary("Sound is off");
+      findPreference("sound_enable").setSummary("O som está desligado");
     }
     findPreference("version").setSummary(BuildConfig.VERSION_NAME);
   }
@@ -73,7 +73,7 @@ public class SettingsActivity extends PreferenceActivity implements OnSharedPref
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
           public void run() {
-            mVerifyAccountDialog = ProgressDialog.show(that, "", "Verifying account_key...", true);
+            mVerifyAccountDialog = ProgressDialog.show(that, "", "Verifificando chave da conta...", true);
             mNetVerifyAccountTask = new NetVerifyAccountTask(that, accountKey, () -> {
               if (mVerifyAccountDialog != null) {
                 mVerifyAccountDialog.dismiss();
@@ -99,9 +99,9 @@ public class SettingsActivity extends PreferenceActivity implements OnSharedPref
         // Log.v("PREFERENCE", "CLICKED!!!");
 
         AlertDialog.Builder builder = new AlertDialog.Builder(that);
-        builder.setMessage("Are you sure you want to create a new account? You will lose access to your current acount.")
+        builder.setMessage("Você tem certeza que deseja criar uma nova conta? Você vai perder o acesso a sua conta atual.")
             .setCancelable(false)
-            .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
               public void onClick(DialogInterface dialog, int id) {
                 dialog.cancel();
               }
@@ -139,7 +139,7 @@ public class SettingsActivity extends PreferenceActivity implements OnSharedPref
       // @Override
       public boolean onPreferenceClick(Preference arg0) {
         Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
-        String aEmailList[] = {"games@bitcoin.com"};
+        String aEmailList[] = {"sklinfotechnologies@gmail.com"};
         emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);
         emailIntent.setType("plain/text");
         startActivity(emailIntent);
@@ -179,11 +179,11 @@ public class SettingsActivity extends PreferenceActivity implements OnSharedPref
         if (header >= 0) {
           String accountKey = contents.substring(header + "account_key:".length());
           CreateAccountTask.setAccountKeyInPreferences(this, accountKey);
-          Toast.makeText(this, "Account key imported!", Toast.LENGTH_SHORT).show();
+          Toast.makeText(this, "Chave de conta importada!", Toast.LENGTH_SHORT).show();
           updateValues();
         } else {
           AlertDialog.Builder builder = new AlertDialog.Builder(this);
-          builder.setMessage(String.format("This is not a valid account_key QR code. Please go to the Android page at %s and scan the QR code listed under \"IMPORT YOUR WEB ACCOUNT\".", CurrencySettings.getInstance(this).getServerName()))
+          builder.setMessage(String.format("Isso não é um QR code de account_key valido. Por favor vá a pagina Android em %s e escaneie o QR code listado abaixo \"IMPORT YOUR WEB ACCOUNT\".", CurrencySettings.getInstance(this).getServerName()))
               .setCancelable(false)
               .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
@@ -199,7 +199,7 @@ public class SettingsActivity extends PreferenceActivity implements OnSharedPref
     }
 
     if (!scanOK) {
-      Toast.makeText(this, "Error scanning QR code", Toast.LENGTH_SHORT).show();
+      Toast.makeText(this, "Erro ao escanear o QR code", Toast.LENGTH_SHORT).show();
     }
   }
 

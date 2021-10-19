@@ -5,49 +5,49 @@
 
         <CheckBoxPreference
             android:key="sound_enable"
-            android:title="Enable sound"
-            android:summary="Sound is on"
+            android:title="Ativar o som"
+            android:summary="O som está ligado"
             android:defaultValue="true" />
 
     </PreferenceCategory>
-    <PreferenceCategory android:title="Your account">
+    <PreferenceCategory android:title="Sua conta">
 
         <EditTextPreference
-            android:name="Your account key"
+            android:name="A chave de sua conta"
             android:layout_width="wrap_content"
             android:key="account_key"
             android:summary="ABCD1234"
-            android:title="Edit your account key" />
+            android:title="Edite a chave da sua conta" />
 
         <Preference
             android:key="import_account"
-            android:title="Import account key from QR code" />
+            android:title="Importar chave da conta por QR code" />
 
         <Preference
             android:key="new_account"
-            android:title="Create new account key" />
+            android:title="Criar nova chave de conta" />
 
     </PreferenceCategory>
-    <PreferenceCategory android:title="Other">
+    <PreferenceCategory android:title="Outros">
 
-        <Preference android:title="Visit games.bitcoin.com">
+        <Preference android:title="Visie nosso site">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://games.bitcoin.com" />
+                android:data="https://google.com" />
         </Preference>
 
         <Preference
-            android:title="View source code"
+            android:title="Ver codigo fonte"
             android:key="view_source_code"
-            android:summary="https://github.com/Bitcoin-com/GamesAndroidApp" />
+            android:summary="Nops" />
 
         <Preference
-            android:title="Email us"
+            android:title="Nos mande um email"
             android:key="email_us"
-            android:summary="games@bitcoin.com" />
+            android:summary="sklinfotechnologies@gmail.com" />
 
         <Preference
-            android:title="Version"
+            android:title="Versão"
             android:key="version"
             android:summary="..." />
 
